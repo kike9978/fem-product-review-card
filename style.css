@@ -199,6 +199,7 @@ button:hover{
     .product-card{
         width: 344px;
         height: 610px;
+        margin-top: 60px;
         flex-direction: column;
         justify-content: flex-end;
 
