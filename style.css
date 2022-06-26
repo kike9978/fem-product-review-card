@@ -93,6 +93,7 @@ body{
 }
 .product-card img{
     width: 50%;
+    border-radius: 8px 0 0 8px;
 }
 
 .product-info{
@@ -103,7 +104,7 @@ body{
     margin-bottom: 30px;
     font-family: "Fraunces", 'Times New Roman', Times, serif;
     font-size: 30px;
-    line-height: normal;
+    line-height: 1.01;
     color: #182128;
     
 }
@@ -119,7 +120,7 @@ body{
 }
 
 .description{
-    margin-bottom: 37px;
+    margin-bottom: 34px;
     line-height: 1.5;
 }
 .price{
