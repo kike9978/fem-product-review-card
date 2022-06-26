@@ -70,11 +70,17 @@ input, textarea, select {
 /*  */
 
 
+html, 
 body{
+    height: 100%;
+    width: 100%;
     font-family: "Montserrat",  Helvetica, Arial, sans-serif;
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
-    height: 100vh;
+    }
+.container{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,6 +156,11 @@ button{
     border-radius: 7px;
 }
 
+button:hover{
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
 .product-info button img{
     width: 14px;
     height: auto;
@@ -162,6 +173,9 @@ button{
 /* Footer and credits */
 
 .attribution {
+    bottom: 10px;
+    position: fixed;
+    padding-bottom: 30px;
     font-size: 11px;
     text-align: center;
 
@@ -170,3 +184,65 @@ button{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 650px) {
+
+    
+    .product-card{
+        width: 344px;
+        height: 610px;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .product-card img{
+        width: auto;
+        height: 39%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .product-info{
+        padding: 24px;
+    }
+
+    .product-info h2{
+        margin-bottom: 14px;
+    }
+    
+    .product-info h1{
+        line-height: 1.06em;
+        margin-bottom: 18px;
+    }
+
+    .product-info p{
+        font-size: 13px;
+        line-height: 1.73em;
+        margin-bottom: 50px;
+    }
+
+    .price{
+        height: auto;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .price p{
+        margin: 0;
+        margin-left: 25px;
+    }
+    button{
+        width: 100%;
+    }
+
+    .attribution{
+        margin-top: 40px;
+        position: relative;
+        padding-bottom: 0;
+    }
+    
+}
+
