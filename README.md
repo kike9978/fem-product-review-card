@@ -48,8 +48,6 @@ Users should be able to:
 
 I learned how media queries and max-width works.
 At the same time I managed to recreate both designs given in figma to get the measurements of the components.
-
-To see how you can add code snippets, see below:
  
 ### Continued development
 
